@@ -1,19 +1,23 @@
 <html>
 <title>Validator</title>
-<link href="CSS\bootstrap.css"><link>
-<link href="CSS\style.css"><link>
+
+<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="CSS/style.css" rel="stylesheet" type="text/css" />
 
 <body>
+    <div class="col-md-3" id="divAlert">
 
-    <h2>Validator</h2>
-    <div class="col-md-3 col-offset-6">
-        <input type="text" id="txt" />
+    </div>
+    <div class="col-md-4">
+        <h2>Validator</h2>
+        <input type="text" class="form-control" id="txtEmptiness" placeholder="For empty val"/>
 
-        <button class="btn btn-success" id="btnValidate">validate</button>
+        <button class="btn btn-success" id="btnValidateEmptiness">validate</button>
     </div>
 
-    <script src="Scripts\jquery.js"></script>
-    <script src="Scripts\bootstrap.js"></script>
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/validator.js"></script>
 </body>
 
 </html>
