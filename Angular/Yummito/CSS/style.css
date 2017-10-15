@@ -1,0 +1,8 @@
+.listContainer{
+    background-color: #cecece;
+}
+
+.deleteItem{
+    float: right;
+    cursor: pointer;
+}

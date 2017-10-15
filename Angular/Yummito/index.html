@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+</head>
+<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="CSS/style.css" rel="stylesheet" type="text/css" />
+
+<script src="Scripts/jquery.js"></script>
+<script src="Scripts/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="Scripts/app.js"></script>
+
+<body>
+    <div class="col-md-3" ng-app="Yummito" ng-controller="YummitoController">
+        <div class=listContainer>
+            <h2>Yummito </h2>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="x in arrFood track by $index">{{x}}
+                    <span class="deleteItem" ng-click="removeItem($index)">x</span>
+                </li>
+            </ul>
+
+            <input class="form-control" type="text" ng-model="txtItem" />
+            <button class="btn btn-warning" ng-click="addItem()">Add</button>
+        </div>
+    </div>
+</body>
+
+</html>
