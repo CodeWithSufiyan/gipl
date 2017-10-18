@@ -17,6 +17,11 @@
         $scope.removeItem = function ($index) {
             $scope.arrFood.splice($index, 1);
         }
+
+        $scope.prepareOrder = function(el){
+            console.log(el) 
+            $scope.order = el
+        }
     });
 
 })(jQuery);
