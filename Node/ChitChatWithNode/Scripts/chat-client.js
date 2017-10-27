@@ -55,7 +55,6 @@ proxy.listen(1337, '127.0.0.1', () => {
 
   const req = http.request(options);
   req.end();
-
   req.on('connect', (res, socket, head) => {
     console.log('got connected!');
 
